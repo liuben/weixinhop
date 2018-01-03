@@ -38,7 +38,7 @@
 >>> from PIL import Image
 >>> im=Image.open("filepath/1.png")  # filepath 为目标
 >>> c = [100,400] # 棋子底部中心点坐标
->>> box = [c[0]-24,c[1]-15,c[0]+24,c[0]+15] # 24 和 15 为例子，需要调整以让截出来的图完全在棋子内部
+>>> box = [c[0]-24,c[1]-15,c[0]+24,c[1]+15] # 24 和 15 为例子，需要调整以让截出来的图完全在棋子内部
 >>> imcrop = im.crop(box)
 >>> imcrop.save("filepath/ball.png")
 
